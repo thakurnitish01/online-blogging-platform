@@ -1,0 +1,32 @@
+<h6 class="extra_heading">Online Blogging Platform </h6>
+<div class="navigation_header">
+<main class="main">
+    <div class="nav">
+        <div><h6 class="heading">Online Blogging Platform</h6></div>
+        <!-- <div class="space-right2"></div> -->
+
+        <div class="nav_icons">
+           <div routerLink="/home"><mat-icon>home</mat-icon></div>
+            <!-- <div><mat-icon>account_circle</mat-icon></div> -->
+            <div><mat-icon>add_circle_outline</mat-icon></div>
+            <div><mat-icon>supervisor_account</mat-icon></div>
+            <div><mat-icon>message</mat-icon></div>
+ 
+        </div>
+        <div class="profile_detail" routerLink="profile">
+            <img src="https://cdn4.vectorstock.com/i/1000x1000/56/78/businessman-profile-colorful-avatar-isolated-flat-vector-9685678.jpg"
+             alt="Not_Found" class="profile_img">
+             <h6>{{ loggedInUserName | titlecase }}</h6>
+        </div>
+        <div>
+           
+        </div>
+    </div>
+    <div class="underline"></div>    
+
+</main>
+</div>
+<div class="home_body">
+    <!-- <app-body/> -->
+    <router-outlet/>
+</div>

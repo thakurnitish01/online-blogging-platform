@@ -1,0 +1,94 @@
+.card
+{
+    background-color: white;
+    position: unset;
+    margin: 1rem;
+}
+.post_card
+{
+    background-color: white;
+}
+.post_Image_cont
+{
+    width: 80%;
+    /* padding: 20px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.post_Image
+{
+    width: 100%;
+    /* padding: 20px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.feed_text
+{
+    border: none;
+    width: 100%;
+    height: 150px;
+}
+
+.send_Button
+{
+    float: right;
+}
+.attachments
+{
+    border: none;
+    margin-top: 1rem;
+    background-color: transparent;
+    color: orangered;
+    position: absolute;
+    /* bottom: 15rem; */
+}
+.attachments_1
+{
+    border: none;
+    background-color: transparent;
+    color: orangered;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    /* bottom: 15rem; */
+}
+.posted_img
+{
+    width: 100%;
+}
+@media screen and (max-width: 720px){
+    .posted_img{
+        width: 100%;
+        background-color: white;
+    }
+ 
+
+}
+
+
+    @media screen and (max-width: 490px){
+.posted_img{
+    width: 100%;
+    background-color: white;
+}
+
+}
+.profile_img
+{
+    background-color: aliceblue;
+    border-radius: 1rem;
+    /* position: relative; */
+    width: 30px;
+    /* left: 1.5rem; */
+    /* background-image: url(""); */
+}
+.profile_header
+{
+    display: flex;
+}
+.profile_header h5
+{
+    margin-left: .8rem;
+    position: relative;
+    top: .3rem;
+}

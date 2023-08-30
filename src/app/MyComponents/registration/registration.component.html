@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="Login_card">
+        <h1>Create Account</h1>
+        <div class="underline"></div>
+        <form [formGroup]="signUpForm" (ngSubmit)="Reg_Users()">
+            <div class="d-flex">
+                <input required type="text" formControlName="firstname" placeholder="First Name" class="form-control mr-1"/>
+                <input required type="text" formControlName="lastname" placeholder="Last Name" class="form-control ml-1"/>
+            </div>
+            <div>
+                <input required type="text" formControlName="contact" placeholder="Contact Number" class="form-control"/>
+                <input required type="email" formControlName="email" placeholder="example@test.com" class="form-control"/>
+            </div>
+
+           <div class="d-flex">
+            <input type="password" formControlName="password" placeholder="Set Password" class="form-control mr-1"/>
+            <input type="password" formControlName="confirm_password" placeholder="Confirm Password" class="form-control ml-1"/>
+           </div>
+
+            <div>
+                <button class="w-100 mt-5"  [disabled]="!signUpForm.valid" mat-raised-button color="warn">Submit</button>
+            </div>
+            <div class="d-flex side_content ">
+                <a class="hover">Forgotten Password...?</a>
+                <a class="hover" routerLink="">Already have Account....</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="main_body">
+	<div class="background_Cont"></div>
+	<div class="profile_detail">
+		<div class="img_container">
+            <img src="https://image.winudf.com/v2/image1/bmV0LndsbHBwci5ib3lzX3Byb2ZpbGVfcGljdHVyZXNfc2NyZWVuXzBfMTY2NzUzNzYxN18wOTk/screen-0.webp?fakeurl=1&type=.webp"
+			alt=""
+			class="profileImg">
+            <h1 class="username">{{currentUser?.firstname }} {{currentUser?.lastname}}</h1>
+        </div>
+        <div class="details">
+            <p class="title">Mobile</p>
+            <p class="description">{{currentUser?.mobile}} </p>
+         </div>
+         <div class="email_details">
+            <p class="title">Email</p>
+            <p class="description">{{currentUser?.email}} </p>
+         </div>
+         <div class="underline"><hr></div>
+         <!-- <div class="userid">
+            USERID
+         </div>
+         <div class="userid_">
+            {{currentUser?.userId}}
+         </div> -->
+	</div>
+    <button mat-fab (click)="logout()" class="button_logout" color="warn">
+        <mat-icon>logout</mat-icon>
+    </button>
+</div>
+<div>
+    <app-my-blogs/>
+</div>

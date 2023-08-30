@@ -1,0 +1,95 @@
+.main_body
+{
+    background-color: white;
+    margin: 0;
+    height: 80vh;
+}
+.background_Cont
+{
+    background-color: rgba(207, 206, 206, 0.397);
+    width: 80%;
+    height: 30vh;
+    position: relative;
+    top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6rem 0 0 0;
+    box-shadow: 0 2px 7px 2px #9999993b;
+}
+.profileImg
+{
+  width: 200px;
+  height: 200px;
+  max-width: 250px;
+  border-radius: 6rem;
+  /* background-color: aqua; */
+  background-size: contain;
+  position: absolute;
+  left: 13rem;
+  top: 12rem;
+}
+.profileImg
+{
+    width: 100%;
+    width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+}
+.username
+{
+    position: absolute;
+    right: 20rem;
+    top: 15rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.details
+{
+    position: absolute;
+    bottom: 9rem;
+    left: 20rem;
+    justify-content: space-around;
+    display: flex;
+}
+.email_details
+{
+    position: absolute;
+    bottom: 5rem;
+    left: 20rem;
+    display: flex;
+
+}
+.title
+{
+    font-size: 20px;
+}
+.userid
+{
+    position: absolute;
+    top: 100%;
+    left: 25rem ;
+}
+.userid_
+{
+    position: absolute;
+    top: 100%;
+    left: 50rem ;
+}
+.underline
+{
+    position: absolute;
+    width: 60%;
+    top: 90%;
+    left: 20rem;
+}
+.description
+{
+    font-size: 20px;
+    position: relative;
+    left: 25rem;
+    color: gray;
+}
+.button_logout
+{
+    position: absolute;
+    right: 10rem;
+}

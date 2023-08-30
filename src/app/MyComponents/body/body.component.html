@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="grid">
+        <div class="side_screen">
+            <div class="m-4">
+                <h6 class="text-success">Blogs<hr></h6>
+
+                <div class="d-flex blog_card" *ngFor="let blog of blogPosts">
+                    <div><img width="50" class="mt-2 ml-2 mr-3" src="https://png.pngtree.com/png-vector/20200614/ourlarge/pngtree-businessman-user-avatar-character-vector-illustration-png-image_2242909.jpg" alt="not found"> </div>
+                    <div>
+                        <strong>{{blog.title}}</strong><br>
+                        <p>{{blog.description}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="pages_Detail">
+            <!-- main Home Page Detail here -->
+            <app-home></app-home>
+            <!-- <router-outlet/> -->
+        </div>
+
+        <div>
+            <div class="userside_screen">
+kj
+            </div>
+            <div class="userside_screen">
+bjk
+            </div>
+        </div>
+    </div>
+</div>

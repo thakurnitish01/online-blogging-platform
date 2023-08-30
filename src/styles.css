@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin:  0  ;
+    background-color: #f1eeee;
+    /* background-image: url("https://o.remove.bg/downloads/c51970fa-488f-4001-b943-b23abbc88d98/png-transparent-red-curved-line-illustration-wave-computer-icons-red-wave-line-text-sound-adobe-illustrator-removebg-preview.png"); */
+    background-size: cover;
+}
+
+@import url('@angular/material/prebuilt-themes/indigo-pink.css');
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";

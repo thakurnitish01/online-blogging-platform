@@ -1,0 +1,72 @@
+<!-- <p-toast></p-toast> -->
+<div class="container">
+  <!-- adding new feed -->
+  <div>
+    <h2>
+      Add New Feed
+      <hr>
+    </h2>
+    <div>
+      <div class="post_card">
+        <div *ngIf="previewUrl" class="post_Image_cont">
+          <img *ngIf="isImageFile" [src]="previewUrl" class="post_Image" alt="Preview">
+          <video *ngIf="isVideoFile" [src]="previewUrl" class="post_Image" controls></video>
+        </div>
+        <textarea [(ngModel)]="newPost_body" class="form-control feed_text pl-4 pt-4 "
+          placeholder="Add Your New Feed Here..." cols="80" rows="3" type="text"></textarea>
+
+        <div>
+          <button (click)="attachFile()" class="attachments">
+            <mat-icon>attach_file</mat-icon>
+          </button>
+        </div>
+        <div>
+          <button (click)="postBlog()" mat-fab class="send_Button">
+            <mat-icon>send</mat-icon>
+          </button>
+        </div>
+        <!-- </form> -->
+      </div>
+      <br>
+      <hr>
+      <h5>All Posts</h5>
+      <br>
+
+    </div>
+
+    <div class="card"></div>
+
+  </div>
+  <div *ngFor=" let user of data" class="card">
+
+    <div class="card-header">
+      <div class="profile_header">
+        <img
+          src="https://cdn4.vectorstock.com/i/1000x1000/56/78/businessman-profile-colorful-avatar-isolated-flat-vector-9685678.jpg"
+          alt="Not_Found" class="profile_img">
+        <h5>{{ user.username }}</h5>
+        <!-- Display the username -->
+      </div>
+    </div>
+    <div class="card-body">
+      <div>
+        <img class="posted_img" src={{user.postImg}} alt>
+      </div>
+      <br>
+      <p class="card-text">{{user.body}}</p>
+
+      <div class="d-flex float-right">
+        <div class="pr-3">
+          <mat-icon>comment</mat-icon>
+        </div>
+        <div class="pr-3">
+          <mat-icon>edit</mat-icon>
+        </div>
+        <div class="pr-3" (click)="deletePost(user.id)">
+          <mat-icon>delete</mat-icon>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

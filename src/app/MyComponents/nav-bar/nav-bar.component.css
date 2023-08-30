@@ -1,0 +1,138 @@
+.navigation_header
+{
+    height: 5rem;
+}
+.extra_heading
+{
+    display: none;
+}
+.main
+{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 5px 2px 7px  #000; */
+    padding:  20px ;
+}
+.nav div{
+    background-color: transparent;
+}
+.underline
+{
+    width: 100%;
+    padding: 2px;
+    background-color: orangered;
+}
+.heading 
+{
+    background-color: transparent;
+}
+.color
+{
+    color: none;
+}
+.nav_icons
+{
+    display: flex;
+    width: 400px;
+    max-width: 500px;
+    justify-content: space-around;
+}
+.profile_img
+{
+    background-color: aliceblue;
+    border-radius: 1rem;
+    position: relative;
+    width: 30px;
+    left: 1.5rem;
+    /* background-image: url(""); */
+}
+.profile_detail
+{
+    display: flex;
+}
+.profile_detail h6
+{
+    position: relative;
+    top: 10px;
+    left: 27px;
+}
+@media screen and (max-width: 800px){
+    .extra_heading
+    {
+        display: none;
+    }
+.nav
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 5px 2px 7px  #000; */
+    padding:  20px ;
+}
+.nav div{
+    background-color: transparent;
+}
+.heading 
+{
+    /* color: red; */
+    display: none;
+}
+  }
+  @media screen and (max-width: 600px){
+    .profile_img
+{
+    background-color: aliceblue;
+    border-radius: 1rem;
+    position: relative;
+    width: 30px;
+    left: 1.5rem;
+    /* background-image: url(""); */
+}
+.profile_detail
+{
+    display: flex;
+}
+.profile_detail h6
+{
+    display: none;
+}
+  }
+
+  @media screen and (max-width: 487px){
+
+.nav_icons
+{
+    display: flex;
+    width: 80%;
+    /* max-width: 500px; */
+    justify-content: space-around;
+}
+.main
+{
+    position: fixed;
+    /* position: absolute; */
+    width: 100%;
+    top: 90%;
+    
+}
+.extra_heading
+{
+    display: block;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+    position: fixed;
+    z-index: 2;
+
+}
+  }
+
+ 
